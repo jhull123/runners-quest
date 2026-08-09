@@ -15,3 +15,24 @@ React owns the application. PixiJS owns the arcade surfaces.
 ## Backend
 - Go
 
+## Frontend development
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Run the development server:
+
+```sh
+npm run dev
+```
+
+Build the frontend:
+
+```sh
+npm run build
+```
+
+There is no automated test suite yet. The production build is the currently available validation check.
