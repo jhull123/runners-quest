@@ -1,0 +1,22 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color-scheme: light;
+  background: skyblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+.title-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: skyblue;
+}
