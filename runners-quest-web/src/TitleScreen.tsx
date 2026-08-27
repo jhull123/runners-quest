@@ -1,4 +1,4 @@
-import titleScreen from './assests/title-screen.png'
+import titleScreen from './assets/title-screen.png'
 
 export default function TitleScreen() {
   return (
