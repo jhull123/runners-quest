@@ -16,14 +16,53 @@ body,
 }
 
 .title-screen {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   min-height: 100dvh;
+  overflow: hidden;
+  padding: 2rem;
   background: #080b10;
 }
 
-.title-screen__logo {
+.title-screen__art {
+  position: relative;
   width: min(100%, 50rem);
+}
+
+.title-screen__logo {
+  display: block;
+  width: 100%;
   height: auto;
+}
+
+.title-screen__dave-wrap {
+  position: absolute;
+  right: calc(100% + 1rem);
+  bottom: 0;
+  width: 144px;
+  height: 224px;
+}
+
+.title-screen__dave {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 288 / 448;
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+  image-rendering: pixelated;
+}
+
+@media (max-width: 36rem) {
+  .title-screen {
+    padding: 1rem;
+  }
+
+  .title-screen__dave-wrap {
+    right: calc(100% - 2rem);
+    bottom: 0;
+    width: 108px;
+    height: 168px;
+  }
 }
