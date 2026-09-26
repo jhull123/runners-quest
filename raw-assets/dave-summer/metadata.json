@@ -1,0 +1,74 @@
+{
+  "group_id": "3fb81bdd-73ec-4b5c-adfd-a0dbec8ab97e",
+  "states": [
+    {
+      "character": {
+        "id": "f82e7d39-4516-4d12-a10b-a083eeefaf01",
+        "name": "Idle",
+        "prompt": "Create a 16-bit pixel-art sprite sheet for a character in a retro running/RPG game called Runners Quest.\n\nThe character is a 40-something recreational runner and weekend-warrior dad, designed with affectionate humor and the visual style of an early-1990s arcade or 16-bit sports game.\n\nHe is not a superhero, action figure, elite athlete, or fantasy warrior. He looks like an ordinary guy who goes running on Saturday mornings.\n\nThe humor comes from the contrast: this completely normal recreational runner is being treated by the game as the hero of an epic RPG quest. Running is what makes him heroic\u2014not looking like a conventional hero.\n\nCharacter design\n\nCreate one consistent male character with:\n\napproximately 40\u201349 years old\nslight dad bod: active and reasonably fit, but with some softness around the middle\nnormal human proportions with mild 16-bit arcade exaggeration for readability\nstrong recreational-runner legs without an exaggerated muscular physique\nprominent retro mustache\nordinary short dad hair, slightly receding\nretro wraparound sports sunglasses\ngold/yellow athletic headband\nearly-1990s running singlet, primarily blue\nera-appropriate short running shorts\nwhite crew athletic socks\nchunky retro running shoes with subtle blue/gold accents\n\nHis blue and gold elements should harmonize with a blue-and-gold early-1990s arcade game logo, but the character should remain visually distinct from the logo.\n\nAvoid excessive neon colors or a palette that would compete with a blue-and-gold title logo.",
+        "size": {
+          "width": 128,
+          "height": 256
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "side",
+        "created_at": "2026-09-19T22:36:58.172112+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "the_character_adjusts_his_sunglasses_with_his_left": {
+            "south": [
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_000.png",
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_001.png",
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_002.png",
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_003.png",
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_004.png",
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_005.png",
+              "Idle/animations/the_character_adjusts_his_sunglasses_with_his_left/south/frame_006.png"
+            ]
+          },
+          "Adjust_sunglasses_with_left_hand._Arm_and_hand_com": {
+            "south": [
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_000.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_001.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_002.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_003.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_004.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_005.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_006.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_007.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com/south/frame_008.png"
+            ]
+          },
+          "Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c": {
+            "south": [
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_000.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_001.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_002.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_003.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_004.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_005.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_006.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_007.png",
+              "Idle/animations/Adjust_sunglasses_with_left_hand._Arm_and_hand_com-ae16046c/south/frame_008.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-26T13:37:38.489797"
+}
