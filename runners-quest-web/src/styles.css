@@ -16,6 +16,7 @@ body,
 }
 
 .title-screen {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +29,8 @@ body,
 
 .title-screen__art {
   position: relative;
-  width: min(100%, 50rem);
+  width: min(100%, 50rem, calc(100dvh - 2rem));
+  transform: translateY(-4rem);
 }
 
 .title-screen__logo {
@@ -37,10 +39,50 @@ body,
   height: auto;
 }
 
-.title-screen__dave-wrap {
+.title-screen__start {
   position: absolute;
-  right: calc(100% + 1rem);
-  bottom: 0;
+  top: calc(78% - 10px);
+  left: 50%;
+  width: 66.55%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.title-screen__start:disabled {
+  cursor: default;
+}
+
+.title-screen__start:focus-visible {
+  outline: 2px solid #ffca33;
+  outline-offset: 4px;
+}
+
+.title-screen__start-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  animation: press-start-blink 1.5s steps(1, end) infinite;
+}
+
+@keyframes press-start-blink {
+  0%, 66.66% { opacity: 1; }
+  66.67%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-screen__start-image {
+    animation: none;
+  }
+}
+
+.title-screen__dave-wrap {
+  position: fixed;
+  left: calc(max(1rem, (100vw - 50rem) / 2 - 15rem) + 15px);
+  bottom: calc(max(1rem, (100dvh - 50rem) / 2) + 112px);
   width: 224px;
   height: 224px;
 }
@@ -58,10 +100,25 @@ body,
     padding: 1rem;
   }
 
+  .title-screen__art {
+    transform: translateY(-clamp(2rem, calc(2rem + (40rem - 100dvh) / 2), 5rem));
+  }
+
   .title-screen__dave-wrap {
-    right: calc(100% - 2rem);
-    bottom: 0;
+    bottom: calc(max(1rem, (100dvh - 50rem) / 2) + 84px);
     width: 168px;
     height: 168px;
+  }
+}
+
+@media (max-height: 36rem) {
+  .title-screen__art {
+    width: min(100%, 50rem, calc(100dvh - 5rem));
+  }
+
+  .title-screen__dave-wrap {
+    width: min(168px, 30dvh);
+    height: min(168px, 30dvh);
+    bottom: calc(max(1rem, (100dvh - 50rem) / 2) + min(84px, 15dvh));
   }
 }

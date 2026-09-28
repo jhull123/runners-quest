@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import pressStart from './assets/press-start.png'
 import titleScreen from './assets/title-screen.png'
 
 const daveFrames = [
@@ -13,7 +14,7 @@ const daveFrames = [
   new URL('./assets/dave-adjust-sunglasses/frame_008.png', import.meta.url).href,
 ]
 
-export default function TitleScreen() {
+export default function TitleScreen({ onStart }: { onStart?: () => void }) {
   const [frameIndex, setFrameIndex] = useState(0)
 
   useEffect(() => {
@@ -31,13 +32,22 @@ export default function TitleScreen() {
     <main className="title-screen">
       <div className="title-screen__art">
         <img className="title-screen__logo" src={titleScreen} alt="Runners Quest" />
-        <div className="title-screen__dave-wrap">
-          <img
-            className="title-screen__dave"
-            src={daveFrames[frameIndex]}
-            alt="Dave idling"
-          />
-        </div>
+        <button
+          className="title-screen__start"
+          type="button"
+          onClick={onStart}
+          disabled={!onStart}
+          aria-label="Press Start"
+        >
+          <img className="title-screen__start-image" src={pressStart} alt="" />
+        </button>
+      </div>
+      <div className="title-screen__dave-wrap">
+        <img
+          className="title-screen__dave"
+          src={daveFrames[frameIndex]}
+          alt="Dave idling"
+        />
       </div>
     </main>
   )
