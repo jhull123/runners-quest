@@ -65,17 +65,21 @@ body,
   width: 100%;
   height: auto;
   image-rendering: pixelated;
-  animation: press-start-blink 1.5s steps(1, end) infinite;
+  animation: press-start-pulse 4s steps(1, end) infinite;
 }
 
-@keyframes press-start-blink {
-  0%, 66.66% { opacity: 1; }
-  66.67%, 100% { opacity: 0; }
+@keyframes press-start-pulse {
+  0%, 75% { opacity: 1; }
+  81.25% { opacity: 0.66; }
+  87.5% { opacity: 0.33; }
+  93.75% { opacity: 0.66; }
+  100% { opacity: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .title-screen__start-image {
     animation: none;
+    opacity: 1;
   }
 }
 
