@@ -29,6 +29,8 @@ The main screen is composed of several panels.
 Contents:
 - Runner avatar. Selectable pixel art character.
 - Runner name. E.g., "Adam" or "Beth".
+- RPG-style level
+- RPG-style class
 - Shoes. Lists two most recent shoes with miles. Button to enable shoe management (add, delete, retire, adjust miles).
 - Settings button. Enables runner specific settings, such as language, units (metric or imperial), week starts on, etc.
 
@@ -57,18 +59,33 @@ Calculated automatically:
 
 ### Quests and challenges panel
 
-...
+What the difference between a quest and a challenge?
 
 ### Map panel
 
 ...
 
+## RQ mechanics
+
+- **Experience.**
+- **Level.**
+- **Bonus.**
+- **Coach.** Coaches grant bonuses for certain behaviors. For instance, base bonus, distance bonus,
+consistency bonus. Coaches ccan be chosen to align with the runner's goals (run more, run farther,
+run before work, goal race training).
+
+## Challenges
+
+- daily, weekly, monthly streaks
+- distance challenge
+
+## Achievements and badges
+- First run... booya!!
+- Two-a-day. Run twice in one day.
+- Touch 'em all. Run every day over a week.
+- Kicks! Add a pair of shoes. (first time)
+
 ## Thoughts
 
 - weekly goals, which may be related to miles, runs, or other (like cut-back week, run 10% less)
 
-## Achievements and badges
-- First run... booya!!
-- Two a day. Run twice in one day.
-- Touch 'em all. Run every day over a week.
-- Kicks! Add a pair of shoes.
